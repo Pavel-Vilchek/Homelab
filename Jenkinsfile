@@ -1,10 +1,7 @@
 pipeline {
-    // Defines the Jenkins agent (node/container) where the entire pipeline or specific stages will run.
     agent any
-
-    // Environment variables can be defined here and used throughout the pipeline.
     environment {
-        // Example: DOCKER_IMAGE = 'node:14'
+        APP_NAME = 'multibranch_test'
     }
 
     // Stages contain the core logic of the pipeline, organized into logical steps.
